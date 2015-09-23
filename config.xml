@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+    <widget id="com.siliconways.sw-app2" version="0.0.1">
+        <name>Restaurant App</name>
+        <description>
+            This is a Restaurant App.
+        </description>
+        <author email="admin@siliconways.net" href="http://www.siliconways.net">
+            Silicon Ways
+        </author>
+		    <icon src="res/icon.png" />
+        <content src="index.html" />
+        <access origin="*" />
+    </widget>
