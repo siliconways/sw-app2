@@ -1,0 +1,29 @@
+<ion-view title="Photos">
+    <ion-content padding="true" class="has-footer" ng-controller="PhotosCtrl">
+        <div class="row">
+            <div class="col col-33">
+                <a href="javascript:void(0)" ng-click="openModal('0')">
+                    <img src="../img/photos/150-150-stepup.png" class="photo">
+                </a>
+            </div>
+            <div class="col col-33">
+                <a href="javascript:void(0)" ng-click="openModal('1')">
+                    <img src="../img/photos/150-150-gl.png" class="photo">
+                </a>
+            </div>
+            <div class="col col-33">
+                <a href="javascript:void(0)" ng-click="openModal('2')">
+                    <img src="../img/photos/150-150-burj-khalifa.jpg" class="photo">
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+<script id="image-modal.html" type="text/ng-template">
+  <div class="modal image-modal transparent" 
+	   ng-click="closeModal()">
+	<ion-slide-box on-slide-changed="slideChanged(index)" show-pager="false">
+		<ion-slide><img src="../img/photos/stepup.png" class="fullscreen-image"></ion-slide><ion-slide><img src="../img/photos/gl.png" class="fullscreen-image"></ion-slide><ion-slide><img src="../img/photos/burj-khalifa.jpg" class="fullscreen-image"></ion-slide>
+	</ion-slide-box>
+  </div>
+</script>
